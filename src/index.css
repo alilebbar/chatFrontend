@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&family=Playwrite+VN+Guides&display=swap');
+
+@import "tailwindcss/preflight";
+@tailwind utilities;
+
+@import "tailwindcss";
+
+.playwrite-hu {
+  font-family: "Playwrite HU", cursive;
+  font-weight: 300; /* ou 100 à 400 */
+  font-style: normal;
+}
+
+.playwrite-vn {
+  font-family: "Playwrite VN Guides", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
