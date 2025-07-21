@@ -13,7 +13,7 @@ export default function Chat() {
 
   const getData = async () => {
     try {
-      const response = await fetch("http://localhost:3000/api/messages");
+      const response = await fetch("https://chatbackend-17qz.onrender.com/api/messages");
       const data = await response.json();
 
       const formatted = data.map(
@@ -33,7 +33,7 @@ export default function Chat() {
   useEffect(() => {
     getData();
 
-    ws.current = new WebSocket("ws://localhost:3000");
+    ws.current = new WebSocket("wss://chatbackend-17qz.onrender.com");
 
     ws.current.onopen = () => {
       console.log("✅ WebSocket connecté");
