@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&family=Playwrite+VN+Guides&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+HU:wght@100..400&family=Playwrite+VN+Guides&display=swap");
 
 @import "tailwindcss/preflight";
 @tailwind utilities;
@@ -15,4 +15,31 @@
   font-family: "Playwrite VN Guides", cursive;
   font-weight: 400;
   font-style: normal;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 3px solid #000000;
+  border-right: 3px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  position: absolute;
+    top: 40%;
+    left: 48%;
+    right: 50%;
+    bottom: 50%;
+
+
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
