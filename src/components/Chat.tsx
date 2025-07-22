@@ -115,7 +115,7 @@ export default function Chat() {
           <div ref={messagesEndRef} /> {/* 👈 Cible du scroll */}
         </div>
 
-        <div className="flex gap-2 sm:items-center sm:flex-col">
+        <div className="flex gap-2 flex-col items-center sm:flex-row">
           <input
             type="text"
             className={`flex-1 border rounded p-2 ${
