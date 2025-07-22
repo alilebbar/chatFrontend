@@ -125,6 +125,7 @@ export default function Chat() {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && sendMessage()}
+            max={1000}
           />
           <button
             onClick={sendMessage}
