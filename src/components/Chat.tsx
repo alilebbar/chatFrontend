@@ -103,7 +103,7 @@ export default function Chat() {
           {messages.map((msg, i) => (
             <div
               key={i}
-              className={`p-2 rounded-md ${
+              className={`p-2 rounded-md overflow-x-hidden ${
                 isDark(msg.sender) ? "bg-gray-100" : "bg-gray-800"
               }`}
               style={{ color: msg.sender }}
@@ -118,7 +118,7 @@ export default function Chat() {
         <div className="flex gap-2 flex-col items-center sm:flex-row">
           <input
             type="text"
-            className={`flex-1 border rounded p-2 overflow-x-hidden ${
+            className={`flex-1 border rounded p-2  ${
               isDarkMode ? "text-white border-white" : "text-black border-black"
             }`}
             placeholder="Votre message..."
