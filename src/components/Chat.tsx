@@ -115,7 +115,7 @@ export default function Chat() {
           <div ref={messagesEndRef} /> {/* 👈 Cible du scroll */}
         </div>
 
-        <div className="flex gap-2">
+        <div className="flex gap-2 sm:items-center sm:flex-col">
           <input
             type="text"
             className={`flex-1 border rounded p-2 ${
@@ -130,7 +130,7 @@ export default function Chat() {
             onClick={sendMessage}
             className={`px-4 py-2 rounded border-2 ${
               isDarkMode ? "text-white border-white" : "text-black border-black"
-            }`}
+            } `}
             style={{ backgroundColor: color }}
           >
             Envoyer
